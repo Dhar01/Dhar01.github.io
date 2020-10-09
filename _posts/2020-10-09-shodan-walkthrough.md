@@ -107,7 +107,11 @@ Here is a list of filters for shodan:
 
 * Under Google's ASN in Los Angeles, what is the top operating system according to Shodan?
 
-**Ans:** PAN-OS.
+**Ans:** PAN-OS. (*answer changes time to time*)
+
+![city](https://user-images.githubusercontent.com/25137893/95612628-85ffe400-0a85-11eb-9f4b-9886b9691023.png)
+
+![pan-os](https://user-images.githubusercontent.com/25137893/95612653-8f894c00-0a85-11eb-8b3b-5e68749d0caa.png)
 
 * Using the top Webcam search from the explore page, does Google's ASN have any webcams? Yay / nay.
 
