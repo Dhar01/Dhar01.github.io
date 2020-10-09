@@ -1,5 +1,5 @@
 ---
-title: Shodan.io walkthrough [TryHackMe]
+title: Shodan.io walk-through [TryHackMe]
 published: true
 ---
 
@@ -99,15 +99,15 @@ Here is a list of filters for shodan:
 
 ![port_80](https://user-images.githubusercontent.com/25137893/95560237-ce45e480-0a3a-11eb-9589-4944832f1d89.png)
 
-**Port 80** stands for **HTTP**; **port 8080** stands for **HTTPs**.
+**Port 80** stands for **HTTP**; **port 443** stands for **HTTPs**.
 
 * Under Google's ASN, what is the most popular city?
 
-**Ans:** Mountain View. (note: need explanation)
+**Ans:** Mountain View. (*answer changes time to time*)
 
 * Under Google's ASN in Los Angeles, what is the top operating system according to Shodan?
 
-**Ans:** PAN-OS. (note: need explanation)
+**Ans:** PAN-OS.
 
 * Using the top Webcam search from the explore page, does Google's ASN have any webcams? Yay / nay.
 
@@ -117,6 +117,4 @@ Here is a list of filters for shodan:
 # Task 05
 
 
-Shodan has a limit on the free user account. It has an API, use it for more searches. (will be updated: more on shodan API)
-
-
+Shodan has a limit on the free user account. It has an API, use it for more searches.
