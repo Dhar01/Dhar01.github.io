@@ -53,16 +53,16 @@ Finally, body of the requests. For POST requests, this is the content that's sen
 #### Responses
 
 The server reply with a response, a status. Normally it'll be a code. A basic breakdown of the status code is:
-- **100-199** : information.
-- **200-299** : Successes. (*200 OK is the "normal" response for a GET*)
-- **300-399** : Redirects (*the information you want is elsewhere*)
-- **400-499** : Client errors (*client did something wrong, like asking for something that doesn't exist*)
-- **500-599** : server errors (*server tried, but something went wrong on their side*)
+1. **100-199** : information.
+2. **200-299** : Successes. (*200 OK is the "normal" response for a GET*)
+3. **300-399** : Redirects (*the information you want is elsewhere*)
+4. **400-499** : Client errors (*client did something wrong, like asking for something that doesn't exist*)
+5. **500-599** : server errors (*server tried, but something went wrong on their side*)
 
 
 * What verb would be used for a login?
 
-**Ans**:
+**Ans**: POST.
 
 * What verb would be used to see your bank balance once you're logged in?
 
