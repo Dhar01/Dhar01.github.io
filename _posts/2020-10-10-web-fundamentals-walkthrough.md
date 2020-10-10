@@ -83,6 +83,7 @@ The server reply with a response, a status. Normally it'll be a code. A basic br
 
 # Task 4
 
+
 **Cookies** are small bits of data that are stored in browser.
 
 Each browser store them differently, so cookies won't be able to antoher browser. They have a huge number of uses, but most common are either **session management** or **advertising** (*tracking cookies*). Cookies are normally sent with every HTTP request made to server.
@@ -102,9 +103,6 @@ When log in to a web application, normally they given a **Session token**. This 
 
 # Task 5
 
-
-# Task 5
-
 We can make HTTP reques in many ways, including without browsers. For CTFs, we'll ned to use **cURL** or a programming language as this allows to automate repetitive tasks.
 
 By default, curl will perform GET requests on whatever URL it get suppplied, such as
@@ -114,4 +112,36 @@ This will retrieve the main page of that website. With command line flags, we ca
 1. The **-X** flag allows to specify <mark>the request type</mark>. Ex: *-X POST*.
 2. The **--data** flag allows to specify the data to POST with, which default to plain text data.
 
+#### Time for mini Ctf!
 
+There are some mentioned tasks on the ctf room. By connecting to the server with curl, we can get the flag for answers.
+
+![Screenshot_2020-10-10 TryHackMe Web Fundamentals](https://user-images.githubusercontent.com/25137893/95652510-57c8e580-0b13-11eb-934f-6c21a4a39e25.png)
+
+* What's the GET flag?
+
+**Ans**: thm{162520bec925bd7979e9ae65a725f99f}
+
+![get 01](https://user-images.githubusercontent.com/25137893/95652447-c48fb000-0b12-11eb-82a9-d3969760eb6d.png)
+
+* What's the POST flag?
+
+**Ans**: thm{3517c902e22def9c6e09b99a9040ba09}
+
+![get cookie 02+](https://user-images.githubusercontent.com/25137893/95652443-bb064800-0b12-11eb-85d0-e61057b66bb5.png)
+
+* What's the POST flag?
+
+**Ans**: thm{91b1ac2606f36b935f465558213d7ebd}
+
+![get cookie 03](https://user-images.githubusercontent.com/25137893/95652429-b04bb300-0b12-11eb-88c4-a161de569652.png)
+
+* What's the "Set a cookie" flag?
+
+**Ans**: thm{c10b5cb7546f359d19c747db2d0f47b3}
+
+![set cookie 04](https://user-images.githubusercontent.com/25137893/95652423-a3c75a80-0b12-11eb-96c2-92850974401e.png)
+
+> Note 1: the web site IP address my be differ from deployed machine. That's why I hide it, enter the IP address you get from the room.
+
+> Note 2: I heard this room was subscirber only, but at the time of writing, it is completely free. 
