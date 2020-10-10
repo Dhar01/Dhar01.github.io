@@ -86,7 +86,7 @@ The server reply with a response, a status. Normally it'll be a code. A basic br
 
 **Cookies** are small bits of data that are stored in browser.
 
-Each browser store them differently, so cookies won't be able to antoher browser. They have a huge number of uses, but most common are either **session management** or **advertising** (*tracking cookies*). Cookies are normally sent with every HTTP request made to server.
+Each browser store them differently, so cookies won't be able to another browser. They have a huge number of uses, but most common are either **session management** or **advertising** (*tracking cookies*). Cookies are normally sent with every HTTP request made to server.
 
 As HTTP is **stateless** (*each request is independent and no state is tracked internally*), cookies are used to keep track of this. They allow sites to keep track of data.
 
