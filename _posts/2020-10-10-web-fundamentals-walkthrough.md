@@ -144,4 +144,4 @@ There are some mentioned tasks on the ctf room. By connecting to the server with
 
 > Note 1: the web site IP address my be differ from deployed machine. That's why I hide it, enter the IP address you get from the room.
 
-> Note 2: I heard this room was subscirber only, but at the time of writing, it is completely free. 
+> Note 2: I heard this room was *subscirber only*, but at the time of writing, it is completely free. 
