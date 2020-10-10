@@ -83,5 +83,35 @@ The server reply with a response, a status. Normally it'll be a code. A basic br
 
 # Task 4
 
+**Cookies** are small bits of data that are stored in browser.
+
+Each browser store them differently, so cookies won't be able to antoher browser. They have a huge number of uses, but most common are either **session management** or **advertising** (*tracking cookies*). Cookies are normally sent with every HTTP request made to server.
+
+As HTTP is **stateless** (*each request is independent and no state is tracked internally*), cookies are used to keep track of this. They allow sites to keep track of data.
+
+Cookies have: 
+1. a **name** : identifies the cookie.
+2. a **value** : where data is stored.
+3. an **expiry date** : when the browser will get rid of the cookie automatically.
+4. a **path** : what requests the cookie will be sent with.
+
+The server is normally what sets cookies, and those come in the response headers (*Set-Cookie*). These can be set from javascript inside browser.
+
+When log in to a web application, normally they given a **Session token**. This allows the web server to identify requests. Stealing someone else's session token can often allow to *impersonate* them.
+
+
+# Task 5
+
+
+# Task 5
+
+We can make HTTP reques in many ways, including without browsers. For CTFs, we'll ned to use **cURL** or a programming language as this allows to automate repetitive tasks.
+
+By default, curl will perform GET requests on whatever URL it get suppplied, such as
+`curl https://tryhackme.com`
+
+This will retrieve the main page of that website. With command line flags, we can do:
+1. The **-X** flag allows to specify <mark>the request type</mark>. Ex: *-X POST*.
+2. The **--data** flag allows to specify the data to POST with, which default to plain text data.
 
 
