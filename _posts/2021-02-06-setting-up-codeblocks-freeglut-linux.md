@@ -14,22 +14,26 @@ Also, I linked to the posts from where I collect these and setup Codeblocks to w
 To work with all of these, of course, we have to install all the necessary files.
 
 For Freeglut:
+
 ```
 sudo apt install g++ freeglut3 freeglut3-dev
 
 sudo apt install libxmu-dev libxi-dev
 ```
 For Codeblocks:
+
 ```
 sudo apt install codeblocks
 ```
 For [OpenGL](https://en.wikibooks.org/wiki/OpenGL_Programming/Installation/Linux):
+
 ```
 sudo apt install build-essential libgl1-mesa-dev
 
 sudo apt install libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev  # some libraries
 ```
 Check OpenGL installation:
+
 ```
 glxinfo | grep OpenGL
 ```
@@ -50,6 +54,7 @@ Now close the Codeblocks.
 Resting part is collected from [here](http://forums.codeblocks.org/index.php?topic=17291.0).
 
 - Go to `/usr/share/codeblocks/templates`, create the file `freeglut.cbp` and put the following code there:
+
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
@@ -86,10 +91,13 @@ Resting part is collected from [here](http://forums.codeblocks.org/index.php?top
 	</Project>
 </CodeBlocks_project_file>
 ```
+
 Save it.
 
 - Create a directory named **freeglut** on `/usr/share/codeblocks/templates/wizard/`. You will find another directory named **glut** there. Copy all the contents and paste it on the newly created **freeglut** directory.
+
 - Now go to the created **freeglut** directory, edit the `wizard.script` file and paste the following:
+
 ```
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -252,11 +260,14 @@ function SetupProject(project)
     return true;
 }
 ```
+
 Save it.
 - Now on `/usr/share/codeblocks/templates/wizard` directory, there is a script named `config.script` and add the following line at the end of the file:
+
 ```
 RegisterWizard(wizProject,     _T("freeglut"),     _T("FreeGLUT project"),      _T("2D/3D Graphics"));
 ```
+
 - Now go to this [link](http://freeglut.sourceforge.net/index.php#download), this is the Freeglut project's source files, download the latest stable:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/fjj0vpb4it4h7m019qff.png)
